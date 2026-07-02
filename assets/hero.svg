@@ -24,6 +24,9 @@
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0.9  0 0 1 0 1  0 0 0 1 0" />
     </filter>
+    <filter id="panelGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
     <clipPath id="rounded"><rect width="1200" height="420" rx="28" ry="28" /></clipPath>
   </defs>
   <g clip-path="url(#rounded)">
@@ -39,6 +42,12 @@
       <path d="M0 84H1200M0 140H1200M0 196H1200M0 252H1200M0 308H1200" stroke="#9AA7B8" stroke-width="1" />
       <path d="M96 0V420M192 0V420M288 0V420M384 0V420M480 0V420M576 0V420M672 0V420M768 0V420M864 0V420M960 0V420M1056 0V420" stroke="#9AA7B8" stroke-width="1" />
     </g>
+    <rect x="66" y="52" width="352" height="316" rx="24" fill="#0B1120" stroke="#22314A" opacity="0.92" filter="url(#panelGlow)" />
+    <path d="M66 112H418" stroke="#22314A" stroke-width="1" opacity="0.7" />
+    <path d="M66 272H418" stroke="#22314A" stroke-width="1" opacity="0.7" />
+    <rect x="66" y="52" width="352" height="316" rx="24" fill="url(#glow)" opacity="0.05">
+      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="7s" repeatCount="indefinite" />
+    </rect>
     <g opacity="0.9">
       <path d="M145 286C206 232 274 218 345 184C417 149 497 156 572 140C651 123 737 81 833 88C905 93 984 128 1082 104" fill="none" stroke="url(#glow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 10">
         <animate attributeName="stroke-dashoffset" from="0" to="-160" dur="9s" repeatCount="indefinite" />
@@ -59,6 +68,19 @@
       <text x="72" y="246" font-size="18" fill="#9AA7B8">Research status: active   •   Mode: production   •   Signal: automated</text>
       <text x="72" y="286" font-size="18" fill="#EAF1FA">Loading repository intelligence...</text>
       <text x="72" y="318" font-size="18" fill="#00E5FF">git fetch origin main  ✓   classify_repositories.py  ✓   update_readme.py  ✓</text>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
+      <text x="104" y="146" font-size="14" letter-spacing="3" fill="#94A3B8">SYSTEM STATUS</text>
+      <text x="104" y="190" font-size="20">AI LAB: LIVE</text>
+      <text x="104" y="224" font-size="16" fill="#94A3B8">Vision · Backend · Automation</text>
+      <text x="104" y="300" font-size="14" fill="#00F5FF">typing: research / deploy / iterate</text>
+      <rect x="104" y="334" width="250" height="10" rx="5" fill="#22314A" />
+      <rect x="104" y="334" width="175" height="10" rx="5" fill="url(#glow)">
+        <animate attributeName="width" values="120;250;120" dur="5.5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="104" y="356" width="120" height="4" rx="2" fill="#00F5FF" opacity="0.6">
+        <animate attributeName="opacity" values="0.35;0.95;0.35" dur="1.8s" repeatCount="indefinite" />
+      </rect>
     </g>
     <rect x="72" y="340" width="360" height="20" rx="10" fill="#0C1628" stroke="#22314A" />
     <rect x="72" y="340" width="240" height="20" rx="10" fill="url(#glow)">

@@ -16,7 +16,9 @@ Building production AI systems with research depth and startup-grade execution.
 
 ## Mission
 
-Designing and shipping AI systems that turn research into dependable products.
+<div align="center">
+<img src="assets/mission-bar.svg" width="100%" alt="Animated mission status bar" />
+</div>
 
 ## Current Focus
 
@@ -57,4 +59,6 @@ Designing and shipping AI systems that turn research into dependable products.
 
 ## Animated Footer
 
-![Footer](assets/footer.svg)
+<div align="center">
+<img src="assets/footer.svg" width="100%" alt="Animated footer" />
+</div>

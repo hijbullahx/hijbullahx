@@ -33,7 +33,9 @@ def build_hero(settings: dict) -> str:
 def build_mission_line() -> str:
     return (
         "## Mission\n\n"
-        "Designing and shipping AI systems that turn research into dependable products."
+        "<div align=\"center\">\n"
+        "<img src=\"assets/mission-bar.svg\" width=\"100%\" alt=\"Animated mission status bar\" />\n"
+        "</div>"
     )
 
 
@@ -107,7 +109,9 @@ def build_lets_build_together(settings: dict) -> str:
 def build_footer() -> str:
     return (
         "## Animated Footer\n\n"
-        "![Footer](assets/footer.svg)"
+        "<div align=\"center\">\n"
+        "<img src=\"assets/footer.svg\" width=\"100%\" alt=\"Animated footer\" />\n"
+        "</div>"
     )
 
 
