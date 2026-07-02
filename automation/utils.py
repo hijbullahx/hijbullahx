@@ -278,10 +278,6 @@ def build_widget_url(name: str, settings: Mapping[str, Any]) -> str:
     profile = settings.get("profile", {})
     widgets = settings.get("widgets", {})
     owner = profile.get("owner", "hijbullahx")
-    if name == "stats":
-        return f"https://github-readme-stats.vercel.app/api?username={owner}&show_icons=true&theme=transparent"
-    if name == "langs":
-        return f"https://github-readme-stats.vercel.app/api/top-langs/?username={owner}&layout=compact&theme=transparent"
     if name == "graph":
         return f"https://github-readme-activity-graph.vercel.app/graph?username={owner}&theme=github-compact"
     if name == "snake":

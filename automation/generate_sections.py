@@ -55,17 +55,6 @@ def build_current_focus(settings: dict) -> str:
     )
 
 
-def build_featured_section(settings: dict, repositories: list[dict]) -> str:
-    featured_limit = int(settings.get("layout", {}).get("featured_limit", 6))
-    card_limit = min(featured_limit, 6)
-    cards = build_cards(repositories[:card_limit], columns=2)
-    return (
-        "## Featured Projects\n\n"
-        "Six repositories surfaced automatically from the portfolio.\n\n"
-        f"{cards}"
-    )
-
-
 def build_technology_stack(settings: dict, statistics: dict) -> str:
     top_languages = statistics.get("top_languages", [])[:4]
     stacks = {
@@ -95,7 +84,6 @@ def build_github_analytics(settings: dict) -> str:
     snake = f"https://raw.githubusercontent.com/{owner}/{owner}/output/github-contribution-grid-snake.svg"
     return (
         "## GitHub Analytics\n\n"
-        f"<div align=\"center\">\n  <img src=\"https://github-readme-stats.vercel.app/api?username={owner}&show_icons=true&theme=transparent&title_color=00F5FF&text_color=F8FAFC&icon_color=8B5CF6&hide_border=true&count_private=true\" height=\"180\" alt=\"GitHub stats\" />\n  <img src=\"https://github-readme-stats.vercel.app/api/top-langs/?username={owner}&layout=compact&theme=transparent&title_color=00F5FF&text_color=F8FAFC&hide_border=true\" height=\"180\" alt=\"Top languages\" />\n</div>\n\n"
         f"<div align=\"center\">\n  <img src=\"{streak}\" height=\"170\" alt=\"GitHub streak\" />\n</div>\n\n"
         f"<div align=\"center\">\n  <img src=\"https://github-readme-activity-graph.vercel.app/graph?username={owner}&theme=github-compact&hide_border=true&bg_color=050816&color=F8FAFC&line=00F5FF&point=8B5CF6\" alt=\"Contribution graph\" />\n</div>\n\n"
         f"<div align=\"center\">\n  <img src=\"{snake}\" alt=\"Contribution snake\" />\n</div>"
@@ -105,7 +93,9 @@ def build_github_analytics(settings: dict) -> str:
 def build_research_journey() -> str:
     return (
         "## Research Journey\n\n"
-        "Python\n\n↓\n\nBackend Engineering\n\n↓\n\nComputer Vision\n\n↓\n\nApplied AI\n\n↓\n\nMedical AI\n\n↓\n\nAutonomous Systems"
+        "<div align=\"center\">\n"
+        "<img src=\"assets/research-journey.svg\" width=\"100%\" alt=\"Animated research journey timeline\" />\n"
+        "</div>"
     )
 
 
@@ -139,7 +129,7 @@ def build_footer() -> str:
 
 
 def build_live_widgets(settings: dict) -> str:
-    widget_order = ["stats", "langs", "graph", "snake", "trophy", "waka", "spotify", "leetcode"]
+    widget_order = ["graph", "snake", "trophy", "waka", "spotify", "leetcode"]
     images = [build_widget_url(name, settings) for name in widget_order]
     images = [image for image in images if image]
     if not images:
@@ -157,14 +147,12 @@ def build_readme() -> str:
     payload = load_json(ROOT / ".cache" / "profile" / "classified_repositories.json", default={})
     statistics = load_json(ROOT / ".cache" / "profile" / "statistics.json", default={})
     repositories = payload.get("repositories", []) if isinstance(payload, dict) else []
-    cards = build_cards(repositories[:6], columns=2)
     readme_template = read_text(ROOT / "templates" / "readme_template.md", default="")
 
     sections = [
         build_hero(settings),
         build_mission_line(),
         build_current_focus(settings),
-        build_featured_section(settings, repositories),
         build_technology_stack(settings, statistics),
         build_github_analytics(settings),
         build_research_journey(),

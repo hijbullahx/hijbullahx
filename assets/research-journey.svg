@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Animated research journey</title>
+  <desc id="desc">A minimal animated timeline showing the progression from Python to Autonomous Systems.</desc>
+  <defs>
+    <linearGradient id="journeyBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="journeyLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.15" />
+    </linearGradient>
+    <filter id="journeyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+  <rect width="1200" height="260" rx="24" fill="url(#journeyBg)" />
+  <g opacity="0.18" stroke="#94A3B8" stroke-width="1">
+    <path d="M80 60H1120M80 130H1120M80 200H1120" />
+    <path d="M150 36V224M350 36V224M550 36V224M750 36V224M950 36V224" />
+  </g>
+  <path d="M150 130H1050" stroke="#22314A" stroke-width="4" stroke-linecap="round" />
+  <path d="M150 130H260" stroke="url(#journeyLine)" stroke-width="4" stroke-linecap="round">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite" values="M150 130H260;M150 130H520;M150 130H840;M150 130H1050;M150 130H260" />
+  </path>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="20" fill="#F8FAFC" text-anchor="middle">
+    <text x="150" y="92">Python</text>
+    <text x="350" y="92">Backend Engineering</text>
+    <text x="550" y="92">Computer Vision</text>
+    <text x="750" y="92">Applied AI</text>
+    <text x="950" y="92">Medical AI</text>
+    <text x="1050" y="92">Autonomous Systems</text>
+  </g>
+  <g>
+    <circle cx="150" cy="130" r="11" fill="#00F5FF" />
+    <circle cx="350" cy="130" r="11" fill="#8B5CF6" />
+    <circle cx="550" cy="130" r="11" fill="#00F5FF" />
+    <circle cx="750" cy="130" r="11" fill="#8B5CF6" />
+    <circle cx="950" cy="130" r="11" fill="#00F5FF" />
+    <circle cx="1050" cy="130" r="11" fill="#8B5CF6" />
+  </g>
+  <g filter="url(#journeyGlow)">
+    <circle cx="150" cy="130" r="5" fill="#00F5FF">
+      <animate attributeName="cx" values="150;350;550;750;950;1050;150" dur="9s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

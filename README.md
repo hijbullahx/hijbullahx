@@ -29,91 +29,6 @@ Designing and shipping AI systems that turn research into dependable products.
 </tr>
 </table>
 
-## Featured Projects
-
-Six repositories surfaced automatically from the portfolio.
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**ANTLINGS_Drone**  
-# ANTLINGS Drone Computer Vision Pipeline **Autonomous Drone-Based Detection, Tracking & Counting System** A high-performance computer visi…
-
-- Language: Jupyter Notebook
-- Stars: 0 | Forks: 0
-- Updated: 1 month ago
-
-[Repository](https://github.com/hijbullahx/ANTLINGS_Drone)
-
-</td>
-<td valign="top" width="50%">
-
-**MushCare**  
-# MushCare: Intelligent Autonomous Farm Ecosystem MushCare is an advanced, AI-integrated IoT ecosystem designed to optimize mushroom cultiv…
-
-- Language: C++
-- Stars: 0 | Forks: 0
-- Updated: 25 days ago
-
-[Repository](https://github.com/hijbullahx/MushCare)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**Breast-Cancer-MRI-YOLOv11**  
-# Breast Cancer Detection using YOLOv11 ![YOLOv11](https://img.shields.io/badge/YOLOv11-Object_Detection-blue?style=for-the-badge&logo=pyth…
-
-- Language: Python
-- Stars: 1 | Forks: 0
-- Updated: 4 months ago
-
-[Repository](https://github.com/hijbullahx/Breast-Cancer-MRI-YOLOv11)
-
-</td>
-<td valign="top" width="50%">
-
-**BD_Autonomous_YOLOv11**  
-# Bangladesh-Adapted YOLOv11 for Autonomous Vehicles ## Thesis Overview **Title:** A Bangladesh-Adapted YOLOv11 Object Detection Model for…
-
-- Language: Python
-- Stars: 0 | Forks: 0
-- Updated: 6 months ago
-
-[Repository](https://github.com/hijbullahx/BD_Autonomous_YOLOv11)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**SynthAI-Squad_AutomaticPriceComparison**  
-# SynthAI Squad: Automatic Service Price & Review Comparison **Project for the SOLVIO AI Hackathon** Our platform helps users make informed…
-
-- Language: Python
-- Stars: 0 | Forks: 0
-- Updated: 7 months ago
-
-[Repository](https://github.com/hijbullahx/SynthAI-Squad_AutomaticPriceComparison)
-
-</td>
-<td valign="top" width="50%">
-
-**IoTGenie**  
-Render
-
-- Language: Python
-- Stars: 0 | Forks: 0
-- Updated: 9 months ago
-
-[Repository](https://github.com/hijbullahx/IoTGenie) · [Live Demo](https://iotgenie.onrender.com/)
-
-</td>
-</tr>
-</table>
-
 ## Technology Stack
 
 ![Technology matrix](assets/grid.svg)
@@ -132,11 +47,6 @@ Render
 ## GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hijbullahx&show_icons=true&theme=transparent&title_color=00F5FF&text_color=F8FAFC&icon_color=8B5CF6&hide_border=true&count_private=true" height="180" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hijbullahx&layout=compact&theme=transparent&title_color=00F5FF&text_color=F8FAFC&hide_border=true" height="180" alt="Top languages" />
-</div>
-
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=hijbullahx&theme=transparent&border_radius=12&date_format=M%20j%5B%2C%20Y%5D" height="170" alt="GitHub streak" />
 </div>
 
@@ -150,27 +60,9 @@ Render
 
 ## Research Journey
 
-Python
-
-↓
-
-Backend Engineering
-
-↓
-
-Computer Vision
-
-↓
-
-Applied AI
-
-↓
-
-Medical AI
-
-↓
-
-Autonomous Systems
+<div align="center">
+<img src="assets/research-journey.svg" width="100%" alt="Animated research journey timeline" />
+</div>
 
 ## Connect With Me
 
