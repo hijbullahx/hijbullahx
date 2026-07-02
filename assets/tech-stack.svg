@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Animated technology stack</title>
+  <desc id="desc">A cinematic technology matrix organized by category with glowing motion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.12" />
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <filter id="cardGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="url(#bg)" />
+  <g opacity="0.12" stroke="#94A3B8" stroke-width="1">
+    <path d="M90 90H1110M90 170H1110M90 250H1110M90 330H1110M90 410H1110M90 490H1110" />
+    <path d="M90 90V490M270 90V490M450 90V490M630 90V490M810 90V490M990 90V490M1110 90V490" />
+  </g>
+  <circle cx="180" cy="90" r="120" fill="#00F5FF" opacity="0.08" filter="url(#softGlow)">
+    <animate attributeName="cx" values="170;210;170" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1020" cy="470" r="140" fill="#8B5CF6" opacity="0.08" filter="url(#softGlow)">
+    <animate attributeName="cy" values="470;430;470" dur="9s" repeatCount="indefinite" />
+  </circle>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
+    <text x="80" y="62" font-size="18" letter-spacing="4" fill="#00F5FF">TECHNOLOGY UNIVERSE</text>
+    <text x="80" y="95" font-size="14" fill="#94A3B8">AI / Backend / Databases / Tools / Cloud / IoT / Research</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
+    <g>
+      <rect x="80" y="130" width="320" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="80" y="130" width="320" height="120" rx="18" fill="url(#glow)" opacity="0.15">
+        <animate attributeName="opacity" values="0.08;0.18;0.08" dur="6s" repeatCount="indefinite" />
+      </rect>
+      <text x="104" y="162" font-size="22" fill="#00F5FF">AI</text>
+      <text x="104" y="198" font-size="18">PyTorch</text>
+      <text x="104" y="228" font-size="18">OpenCV</text>
+      <text x="250" y="198" font-size="18">YOLO</text>
+      <text x="250" y="228" font-size="18">Transformers</text>
+    </g>
+
+    <g>
+      <rect x="440" y="130" width="320" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="440" y="130" width="320" height="120" rx="18" fill="url(#glow)" opacity="0.15">
+        <animate attributeName="opacity" values="0.08;0.2;0.08" dur="6.8s" repeatCount="indefinite" />
+      </rect>
+      <text x="464" y="162" font-size="22" fill="#8B5CF6">Backend</text>
+      <text x="464" y="198" font-size="18">Django</text>
+      <text x="464" y="228" font-size="18">DRF</text>
+      <text x="610" y="198" font-size="18">PostgreSQL</text>
+      <text x="610" y="228" font-size="18">REST APIs</text>
+    </g>
+
+    <g>
+      <rect x="800" y="130" width="320" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="800" y="130" width="320" height="120" rx="18" fill="url(#glow)" opacity="0.15">
+        <animate attributeName="opacity" values="0.08;0.18;0.08" dur="7.4s" repeatCount="indefinite" />
+      </rect>
+      <text x="824" y="162" font-size="22" fill="#00F5FF">Databases</text>
+      <text x="824" y="198" font-size="18">PostgreSQL</text>
+      <text x="824" y="228" font-size="18">SQLite</text>
+      <text x="970" y="198" font-size="18">Firebase</text>
+      <text x="970" y="228" font-size="18">MongoDB</text>
+    </g>
+
+    <g>
+      <rect x="80" y="300" width="230" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="104" y="332" font-size="22" fill="#8B5CF6">Tools</text>
+      <text x="104" y="368" font-size="18">GitHub Actions</text>
+      <text x="104" y="398" font-size="18">Docker</text>
+
+      <rect x="340" y="300" width="230" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="364" y="332" font-size="22" fill="#00F5FF">Cloud</text>
+      <text x="364" y="368" font-size="18">Render</text>
+      <text x="364" y="398" font-size="18">Vercel</text>
+
+      <rect x="600" y="300" width="230" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="624" y="332" font-size="22" fill="#8B5CF6">IoT</text>
+      <text x="624" y="368" font-size="18">ESP32</text>
+      <text x="624" y="398" font-size="18">ESP8266</text>
+
+      <rect x="860" y="300" width="260" height="120" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="884" y="332" font-size="22" fill="#00F5FF">Research</text>
+      <text x="884" y="368" font-size="18">Papers</text>
+      <text x="884" y="398" font-size="18">Benchmarks</text>
+    </g>
+
+    <g>
+      <rect x="80" y="460" width="1040" height="56" rx="16" fill="#0B1120" stroke="#1F2937" />
+      <text x="104" y="496" font-size="18" fill="#94A3B8">Language signal</text>
+      <text x="290" y="496" font-size="18" fill="#F8FAFC">
+        Python · Jupyter Notebook · Unknown · HTML
+      </text>
+      <circle cx="1090" cy="488" r="5" fill="#00F5FF">
+        <animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Animated current focus panel</title>
+  <desc id="desc">A cinematic panel for the current research focus areas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.08" />
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+  <rect width="1200" height="300" rx="26" fill="url(#bg)" />
+  <g opacity="0.12" stroke="#94A3B8" stroke-width="1">
+    <path d="M90 70H1110M90 150H1110M90 230H1110" />
+    <path d="M150 30V270M360 30V270M570 30V270M780 30V270M990 30V270" />
+  </g>
+  <circle cx="180" cy="80" r="110" fill="#00F5FF" opacity="0.08" filter="url(#softGlow)">
+    <animate attributeName="cx" values="170;220;170" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1020" cy="220" r="120" fill="#8B5CF6" opacity="0.08" filter="url(#softGlow)">
+    <animate attributeName="cy" values="220;180;220" dur="7.5s" repeatCount="indefinite" />
+  </circle>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" text-anchor="middle">
+    <text x="600" y="56" font-size="16" letter-spacing="4" fill="#00F5FF">CURRENT FOCUS</text>
+    <text x="600" y="88" font-size="14" fill="#94A3B8">active research directions</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
+    <g>
+      <rect x="80" y="124" width="240" height="98" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="80" y="124" width="240" height="98" rx="18" fill="url(#glow)" opacity="0.12">
+        <animate attributeName="opacity" values="0.06;0.16;0.06" dur="5.6s" repeatCount="indefinite" />
+      </rect>
+      <text x="200" y="166" font-size="20" fill="#00F5FF">Attention-Guided</text>
+      <text x="200" y="194" font-size="20">YOLOv11</text>
+    </g>
+    <g>
+      <rect x="350" y="124" width="240" height="98" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="350" y="124" width="240" height="98" rx="18" fill="url(#glow)" opacity="0.12">
+        <animate attributeName="opacity" values="0.06;0.16;0.06" dur="6.2s" repeatCount="indefinite" />
+      </rect>
+      <text x="470" y="166" font-size="20" fill="#8B5CF6">DeepScope</text>
+      <text x="470" y="194" font-size="20">Research</text>
+    </g>
+    <g>
+      <rect x="620" y="124" width="240" height="98" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="620" y="124" width="240" height="98" rx="18" fill="url(#glow)" opacity="0.12">
+        <animate attributeName="opacity" values="0.06;0.16;0.06" dur="5.9s" repeatCount="indefinite" />
+      </rect>
+      <text x="740" y="166" font-size="20" fill="#00F5FF">Medical</text>
+      <text x="740" y="194" font-size="20">AI</text>
+    </g>
+    <g>
+      <rect x="890" y="124" width="240" height="98" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <rect x="890" y="124" width="240" height="98" rx="18" fill="url(#glow)" opacity="0.12">
+        <animate attributeName="opacity" values="0.06;0.16;0.06" dur="6.6s" repeatCount="indefinite" />
+      </rect>
+      <text x="1010" y="166" font-size="20" fill="#8B5CF6">Intelligent</text>
+      <text x="1010" y="194" font-size="20">Transportation</text>
+    </g>
+  </g>
+</svg>

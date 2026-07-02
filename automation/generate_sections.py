@@ -44,49 +44,32 @@ def build_current_focus(settings: dict) -> str:
         "Medical AI",
         "Intelligent Transportation",
     ]
-    tiles = "\n".join(
-        f"<td align=\"center\" width=\"25%\"><strong>{item}</strong></td>" for item in focus
-    )
     return (
         "## Current Focus\n\n"
-        "<table>\n<tr>\n"
-        f"{tiles}\n"
-        "</tr>\n</table>"
+        "<div align=\"center\">\n"
+        "<img src=\"assets/current-focus.svg\" width=\"100%\" alt=\"Animated current focus panel\" />\n"
+        "</div>"
     )
 
 
 def build_technology_stack(settings: dict, statistics: dict) -> str:
     top_languages = statistics.get("top_languages", [])[:4]
-    stacks = {
-        "AI": ["PyTorch", "OpenCV", "YOLO", "Transformers"],
-        "Backend": ["Django", "DRF", "PostgreSQL", "REST APIs"],
-        "Databases": ["PostgreSQL", "SQLite", "Firebase", "MongoDB"],
-        "Tools": ["GitHub Actions", "Docker", "Linux", "Jupyter"],
-        "Cloud": ["Render", "Vercel", "Streamlit", "GitHub Pages"],
-        "IoT": ["ESP32", "ESP8266", "Sensors", "Automation"],
-        "Research": ["Papers", "Benchmarks", "Experiments", "Reproducibility"],
-    }
-    grid_rows = [["Area", "Stack"]]
-    for category, values in stacks.items():
-        grid_rows.append([category, " · ".join(values)])
-    if top_languages:
-        grid_rows.append(["Languages", " · ".join(top_languages)])
     return (
         "## Technology Stack\n\n"
-        "![Technology matrix](assets/grid.svg)\n\n"
-        + render_markdown_table(grid_rows)
+        "<div align=\"center\">\n"
+        "<img src=\"assets/tech-stack.svg\" width=\"100%\" alt=\"Animated technology stack\" />\n"
+        "</div>"
     )
 
 
 def build_github_analytics(settings: dict) -> str:
     owner = settings.get("profile", {}).get("owner", "hijbullahx")
     streak = f"https://streak-stats.demolab.com?user={owner}&theme=transparent&border_radius=12&date_format=M%20j%5B%2C%20Y%5D"
-    snake = f"https://raw.githubusercontent.com/{owner}/{owner}/output/github-contribution-grid-snake.svg"
     return (
         "## GitHub Analytics\n\n"
         f"<div align=\"center\">\n  <img src=\"{streak}\" height=\"170\" alt=\"GitHub streak\" />\n</div>\n\n"
         f"<div align=\"center\">\n  <img src=\"https://github-readme-activity-graph.vercel.app/graph?username={owner}&theme=github-compact&hide_border=true&bg_color=050816&color=F8FAFC&line=00F5FF&point=8B5CF6\" alt=\"Contribution graph\" />\n</div>\n\n"
-        f"<div align=\"center\">\n  <img src=\"{snake}\" alt=\"Contribution snake\" />\n</div>"
+        ""
     )
 
 
