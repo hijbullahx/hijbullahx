@@ -1,16 +1,8 @@
-# HIJBULLAH AI LAB
-
 <div align="center">
 
+<img src="assets/hero-signature.svg" width="100%" alt="Animated profile signature" />
+
 <img src="assets/hero.svg" width="100%" alt="HIJBULLAH AI LAB hero" />
-
-# Md. Taher Bin Omar Hijbullah
-
-**AI Research Engineer**
-
-Computer vision, autonomous systems, backend engineering, and applied research.
-
-Building production AI systems with research depth and startup-grade execution.
 
 </div>
 

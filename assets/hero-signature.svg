@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">Animated profile signature</title>
+  <desc id="desc">Animated name, role, tagline, and mission panel for the profile hero.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111F" />
+      <stop offset="50%" stop-color="#0B1630" />
+      <stop offset="100%" stop-color="#140A2B" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0" />
+      <stop offset="45%" stop-color="#00F5FF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.34" />
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="240" rx="24" ry="24" /></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="240" rx="24" fill="url(#bg)" />
+    <circle cx="220" cy="56" r="110" fill="url(#orb)" filter="url(#blur)">
+      <animate attributeName="cx" values="180;250;180" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="44;74;44" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="980" cy="186" r="130" fill="url(#orb)" filter="url(#blur)" opacity="0.72">
+      <animate attributeName="cx" values="960;1010;960" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="r" values="120;140;120" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <g opacity="0.12">
+      <path d="M0 52H1200M0 120H1200M0 188H1200" stroke="#94A3B8" stroke-width="1" />
+      <path d="M96 0V240M192 0V240M288 0V240M384 0V240M480 0V240M576 0V240M672 0V240M768 0V240M864 0V240M960 0V240M1056 0V240" stroke="#94A3B8" stroke-width="1" />
+    </g>
+
+    <g filter="url(#glow)">
+      <circle cx="114" cy="76" r="4" fill="#00F5FF" />
+      <circle cx="152" cy="76" r="4" fill="#8B5CF6" />
+      <circle cx="190" cy="76" r="4" fill="#F8FAFC" />
+      <circle cx="114" cy="76" r="4" fill="#00F5FF">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="152" cy="76" r="4" fill="#8B5CF6">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="190" cy="76" r="4" fill="#F8FAFC">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" text-anchor="middle">
+      <text x="600" y="68" font-size="16" letter-spacing="5" fill="#00F5FF">HIJBULLAH AI LAB</text>
+      <text x="600" y="124" font-size="42" font-weight="700" fill="#F8FAFC">Md. Taher Bin Omar Hijbullah</text>
+      <text x="600" y="158" font-size="22" fill="#D7E2F0">AI Research Engineer</text>
+      <text x="600" y="188" font-size="18" fill="#9AA7B8">Computer vision, autonomous systems, backend engineering, and applied research.</text>
+      <text x="600" y="214" font-size="16" fill="#00F5FF">Building production AI systems with research depth and startup-grade execution.</text>
+    </g>
+
+    <g opacity="0.9">
+      <rect x="202" y="104" width="796" height="2" rx="1" fill="url(#accent)" />
+      <rect x="392" y="196" width="416" height="14" rx="7" fill="#0B1120" stroke="#22314A" />
+      <rect x="392" y="196" width="176" height="14" rx="7" fill="url(#accent)">
+        <animate attributeName="x" values="392;620;392" dur="6.2s" repeatCount="indefinite" />
+        <animate attributeName="width" values="150;290;150" dur="5.6s" repeatCount="indefinite" />
+      </rect>
+      <text x="600" y="207" font-size="12" fill="#F8FAFC" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">typing: research / deploy / iterate</text>
+    </g>
+  </g>
+</svg>

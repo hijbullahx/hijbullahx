@@ -21,11 +21,8 @@ def build_hero(settings: dict) -> str:
     mission = "Building production AI systems with research depth and startup-grade execution."
     return (
         "<div align=\"center\">\n\n"
+        "<img src=\"assets/hero-signature.svg\" width=\"100%\" alt=\"Animated profile signature\" />\n\n"
         "<img src=\"assets/hero.svg\" width=\"100%\" alt=\"HIJBULLAH AI LAB hero\" />\n\n"
-        f"# {display_name}\n\n"
-        f"**{role}**\n\n"
-        f"{tagline}\n\n"
-        f"{short_text(mission, 120)}\n\n"
         "</div>"
     )
 

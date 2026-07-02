@@ -1,89 +1,140 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">HIJBULLAH AI LAB hero</title>
-  <desc id="desc">Animated futuristic profile hero for an AI research engineering portfolio.</desc>
+  <desc id="desc">Cinematic animated hero for an AI research engineering profile.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07111F" />
-      <stop offset="55%" stop-color="#0B1630" />
-      <stop offset="100%" stop-color="#140A2B" />
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="50%" stop-color="#08132A" />
+      <stop offset="100%" stop-color="#120B24" />
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.15" />
-      <stop offset="50%" stop-color="#2D7FF9" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.2" />
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0" />
+      <stop offset="45%" stop-color="#00F5FF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
     </linearGradient>
+    <linearGradient id="panelGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.35" />
+      <stop offset="55%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
     <radialGradient id="orb" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.95" />
       <stop offset="50%" stop-color="#2D7FF9" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
     </radialGradient>
     <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="14" />
+      <feGaussianBlur stdDeviation="16" />
     </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0.9  0 0 1 0 1  0 0 0 1 0" />
-    </filter>
-    <filter id="panelGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="5" />
     </filter>
-    <clipPath id="rounded"><rect width="1200" height="420" rx="28" ry="28" /></clipPath>
+    <filter id="panelGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="420" rx="28" ry="28" /></clipPath>
   </defs>
-  <g clip-path="url(#rounded)">
+
+  <g clip-path="url(#clip)">
     <rect width="1200" height="420" fill="url(#bg)" />
-    <circle cx="210" cy="80" r="140" fill="url(#orb)" filter="url(#blur)">
-      <animate attributeName="cx" values="180;240;180" dur="10s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="70;100;70" dur="8s" repeatCount="indefinite" />
+
+    <circle cx="240" cy="84" r="150" fill="url(#orb)" filter="url(#blur)">
+      <animate attributeName="cx" values="190;270;190" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="70;110;70" dur="8s" repeatCount="indefinite" />
     </circle>
-    <circle cx="1030" cy="320" r="180" fill="url(#orb)" opacity="0.65" filter="url(#blur)">
-      <animate attributeName="r" values="160;190;160" dur="9s" repeatCount="indefinite" />
+
+    <circle cx="980" cy="318" r="190" fill="url(#orb)" opacity="0.65" filter="url(#blur)">
+      <animate attributeName="cx" values="960;1020;960" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="300;340;300" dur="9s" repeatCount="indefinite" />
     </circle>
-    <g opacity="0.16">
-      <path d="M0 84H1200M0 140H1200M0 196H1200M0 252H1200M0 308H1200" stroke="#9AA7B8" stroke-width="1" />
-      <path d="M96 0V420M192 0V420M288 0V420M384 0V420M480 0V420M576 0V420M672 0V420M768 0V420M864 0V420M960 0V420M1056 0V420" stroke="#9AA7B8" stroke-width="1" />
+
+    <circle cx="760" cy="190" r="130" fill="url(#spotlight)" opacity="0.7" filter="url(#blur)">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M0,0 C90,-40 160,10 210,0 C250,-8 300,-18 360,8 C420,34 460,10 520,-20" />
+    </circle>
+
+    <g opacity="0.14">
+      <path d="M0 84H1200M0 140H1200M0 196H1200M0 252H1200M0 308H1200" stroke="#94A3B8" stroke-width="1" />
+      <path d="M96 0V420M192 0V420M288 0V420M384 0V420M480 0V420M576 0V420M672 0V420M768 0V420M864 0V420M960 0V420M1056 0V420" stroke="#94A3B8" stroke-width="1" />
     </g>
-    <rect x="66" y="52" width="352" height="316" rx="24" fill="#0B1120" stroke="#22314A" opacity="0.92" filter="url(#panelGlow)" />
-    <path d="M66 112H418" stroke="#22314A" stroke-width="1" opacity="0.7" />
-    <path d="M66 272H418" stroke="#22314A" stroke-width="1" opacity="0.7" />
-    <rect x="66" y="52" width="352" height="316" rx="24" fill="url(#glow)" opacity="0.05">
-      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="7s" repeatCount="indefinite" />
-    </rect>
-    <g opacity="0.9">
-      <path d="M145 286C206 232 274 218 345 184C417 149 497 156 572 140C651 123 737 81 833 88C905 93 984 128 1082 104" fill="none" stroke="url(#glow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 10">
-        <animate attributeName="stroke-dashoffset" from="0" to="-160" dur="9s" repeatCount="indefinite" />
+
+    <g opacity="0.85">
+      <path d="M120 318C200 278 268 272 340 242C416 210 490 182 566 170C648 156 734 136 822 100C902 66 994 90 1090 62" fill="none" stroke="url(#beam)" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8 12">
+        <animate attributeName="stroke-dashoffset" values="0;-180" dur="9s" repeatCount="indefinite" />
       </path>
-      <path d="M116 316C196 286 262 280 330 252C410 220 491 208 571 192C656 176 741 140 840 146C932 151 1000 182 1104 160" fill="none" stroke="#00E5FF" stroke-opacity="0.28" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M126 294C210 264 276 258 354 236C430 214 500 190 578 178C660 164 744 150 832 120C916 90 996 108 1086 86" fill="none" stroke="#00F5FF" stroke-opacity="0.18" stroke-width="1.5" stroke-linecap="round" />
     </g>
-    <g filter="url(#softGlow)">
-      <circle cx="290" cy="202" r="7" fill="#00E5FF"><animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" /></circle>
-      <circle cx="418" cy="170" r="6" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite" /></circle>
-      <circle cx="563" cy="150" r="8" fill="#7C3AED"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.6s" repeatCount="indefinite" /></circle>
-      <circle cx="744" cy="125" r="6" fill="#00E5FF"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite" /></circle>
-      <circle cx="877" cy="108" r="7" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite" /></circle>
+
+    <g filter="url(#glow)">
+      <circle cx="290" cy="206" r="7" fill="#00F5FF"><animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" /></circle>
+      <circle cx="424" cy="168" r="6" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite" /></circle>
+      <circle cx="566" cy="152" r="8" fill="#7C3AED"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.6s" repeatCount="indefinite" /></circle>
+      <circle cx="742" cy="128" r="6" fill="#00F5FF"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite" /></circle>
+      <circle cx="878" cy="108" r="7" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite" /></circle>
     </g>
-    <g fill="#EAF1FA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">
-      <text x="72" y="86" font-size="14" letter-spacing="4" fill="#00E5FF">HIJBULLAH AI LAB</text>
-      <text x="72" y="156" font-size="52" font-weight="700">AI Research Engine</text>
-      <text x="72" y="200" font-size="24" fill="#9AA7B8">Computer Vision · Autonomous Systems · Backend Engineering</text>
-      <text x="72" y="246" font-size="18" fill="#9AA7B8">Research status: active   •   Mode: production   •   Signal: automated</text>
-      <text x="72" y="286" font-size="18" fill="#EAF1FA">Loading repository intelligence...</text>
+
+    <g>
+      <rect x="64" y="48" width="364" height="322" rx="26" fill="#0B1120" stroke="#22314A" opacity="0.94" filter="url(#panelGlow)" />
+      <rect x="64" y="48" width="364" height="322" rx="26" fill="url(#panelGlow)" opacity="0.12">
+        <animate attributeName="opacity" values="0.05;0.16;0.05" dur="7s" repeatCount="indefinite" />
+      </rect>
+      <path d="M64 108H428" stroke="#22314A" stroke-width="1" opacity="0.7" />
+      <path d="M64 270H428" stroke="#22314A" stroke-width="1" opacity="0.7" />
     </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">
+      <text x="86" y="84" font-size="14" letter-spacing="4" fill="#00F5FF">HIJBULLAH AI LAB</text>
+      <text x="86" y="148" font-size="54" font-weight="700" fill="#F8FAFC">AI Research</text>
+      <text x="86" y="188" font-size="54" font-weight="700" fill="#F8FAFC">Engine</text>
+      <text x="86" y="226" font-size="20" fill="#94A3B8">Computer Vision · Autonomous Systems · Backend Engineering</text>
+      <text x="86" y="258" font-size="16" fill="#94A3B8">production-grade research, built to ship</text>
+      <text x="86" y="300" font-size="15" fill="#00F5FF">cursor trace: live</text>
+      <rect x="86" y="320" width="246" height="10" rx="5" fill="#22314A" />
+      <rect x="86" y="320" width="160" height="10" rx="5" fill="url(#beam)">
+        <animate attributeName="x" values="86;172;86" dur="6s" repeatCount="indefinite" />
+        <animate attributeName="width" values="140;250;140" dur="5.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
-      <text x="104" y="146" font-size="14" letter-spacing="3" fill="#94A3B8">SYSTEM STATUS</text>
-      <text x="104" y="190" font-size="20">AI LAB: LIVE</text>
-      <text x="104" y="224" font-size="16" fill="#94A3B8">Vision · Backend · Automation</text>
-      <text x="104" y="300" font-size="14" fill="#00F5FF">typing: research / deploy / iterate</text>
-      <rect x="104" y="334" width="250" height="10" rx="5" fill="#22314A" />
-      <rect x="104" y="334" width="175" height="10" rx="5" fill="url(#glow)">
-        <animate attributeName="width" values="120;250;120" dur="5.5s" repeatCount="indefinite" />
-      </rect>
-      <rect x="104" y="356" width="120" height="4" rx="2" fill="#00F5FF" opacity="0.6">
-        <animate attributeName="opacity" values="0.35;0.95;0.35" dur="1.8s" repeatCount="indefinite" />
-      </rect>
+      <rect x="452" y="78" width="246" height="116" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="476" y="112" font-size="16" fill="#00F5FF">RESEARCH MODE</text>
+      <text x="476" y="142" font-size="22">Observe</text>
+      <text x="476" y="170" font-size="22">Prototype</text>
+
+      <rect x="720" y="78" width="206" height="116" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="744" y="112" font-size="16" fill="#8B5CF6">SYSTEMS</text>
+      <text x="744" y="142" font-size="20">Build</text>
+      <text x="744" y="170" font-size="20">Ship</text>
+
+      <rect x="948" y="78" width="188" height="116" rx="18" fill="#0B1120" stroke="#1F2937" />
+      <text x="972" y="112" font-size="16" fill="#00F5FF">STATUS</text>
+      <text x="972" y="142" font-size="20">Active</text>
+      <text x="972" y="170" font-size="20">Live</text>
     </g>
-    <rect x="72" y="340" width="360" height="20" rx="10" fill="#0C1628" stroke="#22314A" />
-    <rect x="72" y="340" width="240" height="20" rx="10" fill="url(#glow)">
-      <animate attributeName="width" values="180;300;180" dur="6s" repeatCount="indefinite" />
-    </rect>
+
+    <g filter="url(#glow)">
+      <circle cx="514" cy="184" r="6" fill="#00F5FF">
+        <animateMotion dur="5.2s" repeatCount="indefinite" path="M0,0 C50,-20 110,-20 150,0 C190,20 240,24 280,0" />
+      </circle>
+      <circle cx="516" cy="184" r="3" fill="#F8FAFC">
+        <animateMotion dur="5.2s" repeatCount="indefinite" path="M0,0 C50,-20 110,-20 150,0 C190,20 240,24 280,0" />
+      </circle>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#94A3B8" text-anchor="middle">
+      <text x="856" y="276" font-size="13" letter-spacing="4">INTELLIGENCE / VISUALIZATION / EXECUTION</text>
+    </g>
+
+    <g opacity="0.85">
+      <rect x="430" y="302" width="682" height="36" rx="18" fill="#0B1120" stroke="#22314A" />
+      <rect x="430" y="302" width="258" height="36" rx="18" fill="url(#beam)">
+        <animate attributeName="x" values="430;820;430" dur="7.4s" repeatCount="indefinite" />
+      </rect>
+      <text x="771" y="326" font-size="14" fill="#F8FAFC" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">typing: research / deploy / iterate</text>
+    </g>
   </g>
 </svg>
