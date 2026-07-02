@@ -1,0 +1,5 @@
+# HIJBULLAH AI LAB
+
+{{BODY}}
+
+{{WIDGETS}}

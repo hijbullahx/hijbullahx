@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
+  <rect width="1200" height="220" fill="#07111F" />
+  <g font-family="ui-monospace, monospace" font-size="18" fill="#00E5FF" opacity="0.85">
+    <text x="60" y="50">0101</text>
+    <text x="130" y="86">1100</text>
+    <text x="210" y="62">1011</text>
+    <text x="290" y="118">0110</text>
+    <text x="370" y="76">1001</text>
+    <text x="450" y="142">0011</text>
+    <text x="530" y="64">1110</text>
+    <text x="610" y="126">0100</text>
+    <text x="690" y="54">1010</text>
+    <text x="770" y="104">0111</text>
+    <text x="850" y="78">1000</text>
+    <text x="930" y="148">0010</text>
+    <text x="1010" y="70">1101</text>
+    <text x="1090" y="118">0001</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "featured_limit": 12,
+  "featured_categories": [
+    "Computer Vision",
+    "Medical AI",
+    "Research",
+    "Backend",
+    "IoT",
+    "Automation",
+    "Production"
+  ],
+  "spotlight_terms": [
+    "yolo",
+    "vision transformer",
+    "deep scope",
+    "django",
+    "postgre",
+    "automation",
+    "iot"
+  ],
+  "exclude_topics": [
+    "template",
+    "example",
+    "archive"
+  ]
+}

@@ -1,0 +1,54 @@
+name: Update Profile Ecosystem
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
+    - cron: "29 2 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-ecosystem-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/profile
+          key: profile-cache-${{ github.run_id }}
+          restore-keys: |
+            profile-cache-
+
+      - name: Generate profile README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+        run: python automation/update_readme.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No README changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh profile ecosystem"
+          git push

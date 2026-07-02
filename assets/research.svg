@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Research banner</title>
+  <desc id="desc">A laboratory-inspired banner with scanning lines and status indicators.</desc>
+  <defs>
+    <linearGradient id="researchBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111F" />
+      <stop offset="100%" stop-color="#101C31" />
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="24" fill="url(#researchBg)" />
+  <g stroke="#22314A" stroke-width="1">
+    <path d="M60 68H1140M60 128H1140M60 188H1140" opacity="0.7" />
+    <path d="M150 32V228M300 32V228M450 32V228M600 32V228M750 32V228M900 32V228M1050 32V228" opacity="0.35" />
+  </g>
+  <rect x="74" y="42" width="250" height="30" rx="15" fill="#0C1628" stroke="#00E5FF" stroke-opacity="0.25" />
+  <rect x="74" y="42" width="140" height="30" rx="15" fill="url(#scan)">
+    <animate attributeName="x" values="-120;860;1200" dur="7s" repeatCount="indefinite" />
+  </rect>
+  <g fill="#EAF1FA" font-family="ui-monospace, monospace" font-size="20">
+    <text x="78" y="114">research_status: active</text>
+    <text x="78" y="154">focus: vision, automation, deployment</text>
+    <text x="78" y="194">signal: reproducible, maintainable, public</text>
+  </g>
+  <g fill="#00E5FF" opacity="0.95">
+    <circle cx="1018" cy="72" r="5" />
+    <circle cx="1048" cy="112" r="5" />
+    <circle cx="1078" cy="152" r="5" />
+    <circle cx="1108" cy="92" r="5" />
+  </g>
+</svg>

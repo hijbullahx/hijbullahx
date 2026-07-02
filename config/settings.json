@@ -1,0 +1,44 @@
+{
+  "profile": {
+    "owner": "hijbullahx",
+    "display_name": "Md. Taher Bin Omar Hijbullah",
+    "brand": "HIJBULLAH AI LAB",
+    "role": "AI Research Engineer",
+    "tagline": "Computer vision, autonomous systems, backend engineering, and applied research.",
+    "current_position": "Final-year Computer Science & Engineering student focused on production AI systems.",
+    "vision": [
+      "Computer Vision",
+      "Autonomous Systems",
+      "Intelligent Transportation",
+      "Medical AI",
+      "Robotics",
+      "Open Source AI"
+    ],
+    "contact": {
+      "github": "https://github.com/hijbullahx",
+      "website": "",
+      "email": ""
+    },
+    "token": ""
+  },
+  "github": {
+    "include_archived": false,
+    "include_forks": false,
+    "include_private": false,
+    "per_page": 100,
+    "max_repos": 300,
+    "cache_minutes": 360
+  },
+  "widgets": {
+    "wakatime_username": "",
+    "spotify_user_id": "",
+    "leetcode_username": "",
+    "devto_username": "",
+    "medium_username": "",
+    "rss_feed_url": ""
+  },
+  "layout": {
+    "featured_limit": 12,
+    "gallery_columns": 2
+  }
+}

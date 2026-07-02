@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Technology matrix</title>
+  <desc id="desc">A sleek grid visual representing the technology universe.</desc>
+  <rect width="1200" height="320" rx="24" fill="#07111F" />
+  <defs>
+    <linearGradient id="gridLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  <g stroke="url(#gridLine)" stroke-width="1">
+    <path d="M90 40H1110M90 90H1110M90 140H1110M90 190H1110M90 240H1110M90 290H1110" />
+    <path d="M90 40V290M210 40V290M330 40V290M450 40V290M570 40V290M690 40V290M810 40V290M930 40V290M1050 40V290" />
+  </g>
+  <g fill="#EAF1FA" font-family="ui-monospace, monospace" font-size="18" opacity="0.92">
+    <text x="120" y="74">Python</text>
+    <text x="240" y="74">Django</text>
+    <text x="360" y="74">PostgreSQL</text>
+    <text x="486" y="74">PyTorch</text>
+    <text x="606" y="74">OpenCV</text>
+    <text x="732" y="74">YOLO</text>
+    <text x="852" y="74">REST APIs</text>
+    <text x="970" y="74">Docker</text>
+    <text x="1088" y="74" text-anchor="end">GitHub Actions</text>
+  </g>
+  <g fill="#00E5FF" opacity="0.75">
+    <circle cx="180" cy="170" r="6" />
+    <circle cx="300" cy="170" r="6" />
+    <circle cx="420" cy="170" r="6" />
+    <circle cx="540" cy="170" r="6" />
+    <circle cx="660" cy="170" r="6" />
+    <circle cx="780" cy="170" r="6" />
+    <circle cx="900" cy="170" r="6" />
+    <circle cx="1020" cy="170" r="6" />
+  </g>
+  <rect x="100" y="214" width="1000" height="2" fill="#22314A" />
+</svg>

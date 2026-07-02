@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
+  <rect width="1200" height="220" fill="#07111F" />
+  <g fill="#00E5FF" opacity="0.8">
+    <circle cx="80" cy="48" r="3"><animate attributeName="cy" values="48;32;48" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="172" cy="116" r="2"><animate attributeName="cy" values="116;100;116" dur="3.4s" repeatCount="indefinite" /></circle>
+    <circle cx="284" cy="62" r="4"><animate attributeName="cy" values="62;78;62" dur="5s" repeatCount="indefinite" /></circle>
+    <circle cx="418" cy="148" r="2"><animate attributeName="cy" values="148;128;148" dur="3.8s" repeatCount="indefinite" /></circle>
+    <circle cx="556" cy="36" r="3"><animate attributeName="cy" values="36;50;36" dur="4.6s" repeatCount="indefinite" /></circle>
+    <circle cx="694" cy="102" r="4"><animate attributeName="cy" values="102;84;102" dur="4.1s" repeatCount="indefinite" /></circle>
+    <circle cx="824" cy="52" r="2"><animate attributeName="cy" values="52;70;52" dur="3.2s" repeatCount="indefinite" /></circle>
+    <circle cx="960" cy="132" r="3"><animate attributeName="cy" values="132;116;132" dur="5.2s" repeatCount="indefinite" /></circle>
+    <circle cx="1090" cy="66" r="4"><animate attributeName="cy" values="66;82;66" dur="4.4s" repeatCount="indefinite" /></circle>
+  </g>
+</svg>

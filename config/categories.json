@@ -1,0 +1,77 @@
+{
+  "AI": {
+    "keywords": ["ai", "artificial intelligence", "intelligent", "mlops", "model", "inference"],
+    "topics": ["ai", "ml", "machine-learning", "artificial-intelligence"],
+    "languages": ["Python"]
+  },
+  "Machine Learning": {
+    "keywords": ["machine learning", "deep learning", "training", "dataset", "benchmark"],
+    "topics": ["machine-learning", "deep-learning", "neural-network", "transformers"],
+    "languages": ["Python"]
+  },
+  "Computer Vision": {
+    "keywords": ["vision", "image", "video", "detection", "tracking", "yolo", "segmentation"],
+    "topics": ["computer-vision", "object-detection", "yolo", "opencv"],
+    "languages": ["Python"]
+  },
+  "Medical AI": {
+    "keywords": ["medical", "cancer", "health", "diagnosis", "radiology", "clinical"],
+    "topics": ["medical-ai", "healthcare", "diagnosis"],
+    "languages": ["Python"]
+  },
+  "Research": {
+    "keywords": ["research", "paper", "experiment", "analysis", "study", "lab"],
+    "topics": ["research", "paper", "experiment"],
+    "languages": ["Python"]
+  },
+  "Research Papers": {
+    "keywords": ["paper", "citation", "bibliography", "literature", "survey"],
+    "topics": ["paper", "survey", "literature-review"],
+    "languages": ["Python"]
+  },
+  "Backend": {
+    "keywords": ["backend", "api", "server", "django", "drf", "postgresql", "rest"],
+    "topics": ["backend", "api", "django", "rest"],
+    "languages": ["Python"]
+  },
+  "Frontend": {
+    "keywords": ["frontend", "ui", "interface", "dashboard", "webapp"],
+    "topics": ["frontend", "ui", "dashboard"],
+    "languages": ["TypeScript", "JavaScript"]
+  },
+  "IoT": {
+    "keywords": ["iot", "embedded", "esp8266", "esp32", "sensor", "automation"],
+    "topics": ["iot", "embedded", "esp32", "esp8266"],
+    "languages": ["C++", "Python"]
+  },
+  "Automation": {
+    "keywords": ["automation", "workflow", "bot", "scheduler", "pipeline"],
+    "topics": ["automation", "workflow", "ci-cd"],
+    "languages": ["Python", "Shell"]
+  },
+  "Python": {
+    "keywords": ["python"],
+    "topics": ["python"],
+    "languages": ["Python"]
+  },
+  "Django": {
+    "keywords": ["django", "drf", "django rest"],
+    "topics": ["django", "django-rest-framework"],
+    "languages": ["Python"]
+  },
+  "Experimental": {
+    "keywords": ["experiment", "prototype", "proof of concept", "demo"],
+    "topics": ["experimental", "prototype", "demo"],
+    "languages": ["Python"]
+  },
+  "Production": {
+    "keywords": ["production", "deploy", "service", "platform", "system"],
+    "topics": ["production", "deployment", "platform"],
+    "languages": ["Python", "TypeScript"]
+  },
+  "Utilities": {
+    "keywords": ["utility", "tool", "helper", "script", "cli"],
+    "topics": ["utility", "tools", "cli"],
+    "languages": ["Python"]
+  }
+}

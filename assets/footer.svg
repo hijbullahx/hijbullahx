@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" role="img" aria-labelledby="title desc">
+  <title id="title">Animated footer</title>
+  <desc id="desc">A small glowing footer wave for the profile ecosystem.</desc>
+  <defs>
+    <linearGradient id="footerGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.05" />
+      <stop offset="45%" stop-color="#2D7FF9" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.08" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="160" fill="#07111F" rx="24" />
+  <path d="M0 92C84 72 164 76 246 86C327 97 409 120 491 110C574 100 651 60 731 64C818 68 891 114 972 112C1052 110 1124 72 1200 82V160H0Z" fill="url(#footerGradient)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 92C84 72 164 76 246 86C327 97 409 120 491 110C574 100 651 60 731 64C818 68 891 114 972 112C1052 110 1124 72 1200 82V160H0Z;M0 84C84 104 164 104 246 92C327 80 409 54 491 64C574 74 651 122 731 118C818 114 891 66 972 68C1052 70 1124 104 1200 96V160H0Z;M0 92C84 72 164 76 246 86C327 97 409 120 491 110C574 100 651 60 731 64C818 68 891 114 972 112C1052 110 1124 72 1200 82V160H0Z" />
+  </path>
+  <circle cx="164" cy="76" r="5" fill="#00E5FF">
+    <animate attributeName="cy" values="76;62;76" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="388" cy="54" r="4" fill="#2D7FF9">
+    <animate attributeName="cy" values="54;72;54" dur="3.6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="602" cy="42" r="6" fill="#7C3AED">
+    <animate attributeName="cy" values="42;60;42" dur="4.6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="866" cy="58" r="5" fill="#00E5FF">
+    <animate attributeName="cy" values="58;40;58" dur="4.2s" repeatCount="indefinite" />
+  </circle>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Neural network motif</title>
+  <desc id="desc">A motion-friendly neural network visual for the research ecosystem.</desc>
+  <rect width="1200" height="260" rx="24" fill="#07111F" />
+  <g stroke="#22314A" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M180 60L360 130L180 200" />
+    <path d="M360 130L560 72L760 130L560 188Z" />
+    <path d="M760 130L960 70L960 190" />
+    <path d="M180 60L560 72" />
+    <path d="M180 200L560 188" />
+    <path d="M360 130L760 130" />
+    <path d="M560 72L960 70" />
+    <path d="M560 188L960 190" />
+  </g>
+  <g>
+    <circle cx="180" cy="60" r="12" fill="#00E5FF" />
+    <circle cx="180" cy="200" r="12" fill="#2D7FF9" />
+    <circle cx="360" cy="130" r="14" fill="#7C3AED" />
+    <circle cx="560" cy="72" r="12" fill="#00E5FF" />
+    <circle cx="560" cy="188" r="12" fill="#2D7FF9" />
+    <circle cx="760" cy="130" r="14" fill="#7C3AED" />
+    <circle cx="960" cy="70" r="12" fill="#00E5FF" />
+    <circle cx="960" cy="190" r="12" fill="#2D7FF9" />
+  </g>
+</svg>

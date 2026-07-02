@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Research timeline</title>
+  <desc id="desc">A sleek timeline visual for lab evolution and portfolio growth.</desc>
+  <rect width="1200" height="260" rx="24" fill="#07111F" />
+  <path d="M120 132H1080" stroke="#22314A" stroke-width="4" stroke-linecap="round" />
+  <path d="M120 132H620" stroke="#00E5FF" stroke-width="4" stroke-linecap="round">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M120 132H420;M120 132H780;M120 132H420" />
+  </path>
+  <g fill="#EAF1FA" font-family="ui-monospace, monospace" font-size="18" opacity="0.95">
+    <text x="96" y="92">Foundation</text>
+    <text x="326" y="92">Computer Vision</text>
+    <text x="548" y="92">Research Automation</text>
+    <text x="826" y="92">Production Systems</text>
+    <text x="1030" y="92">Future Labs</text>
+  </g>
+  <g>
+    <circle cx="120" cy="132" r="11" fill="#00E5FF" />
+    <circle cx="340" cy="132" r="11" fill="#2D7FF9" />
+    <circle cx="620" cy="132" r="11" fill="#7C3AED" />
+    <circle cx="900" cy="132" r="11" fill="#00E5FF" />
+    <circle cx="1080" cy="132" r="11" fill="#2D7FF9" />
+  </g>
+</svg>

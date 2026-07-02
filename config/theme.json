@@ -1,0 +1,14 @@
+{
+  "background": "#07111F",
+  "panel": "#0C1628",
+  "panel_soft": "#101C31",
+  "cyan": "#00E5FF",
+  "blue": "#2D7FF9",
+  "purple": "#7C3AED",
+  "white": "#EAF1FA",
+  "muted": "#9AA7B8",
+  "accent_gradient": ["#00E5FF", "#2D7FF9", "#7C3AED"],
+  "hero_height": 320,
+  "card_radius": 20,
+  "grid_opacity": 0.18
+}

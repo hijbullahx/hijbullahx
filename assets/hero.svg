@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">HIJBULLAH AI LAB hero</title>
+  <desc id="desc">Animated futuristic profile hero for an AI research engineering portfolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111F" />
+      <stop offset="55%" stop-color="#0B1630" />
+      <stop offset="100%" stop-color="#140A2B" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#2D7FF9" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.2" />
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#2D7FF9" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" />
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0.9  0 0 1 0 1  0 0 0 1 0" />
+    </filter>
+    <clipPath id="rounded"><rect width="1200" height="420" rx="28" ry="28" /></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="1200" height="420" fill="url(#bg)" />
+    <circle cx="210" cy="80" r="140" fill="url(#orb)" filter="url(#blur)">
+      <animate attributeName="cx" values="180;240;180" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="70;100;70" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1030" cy="320" r="180" fill="url(#orb)" opacity="0.65" filter="url(#blur)">
+      <animate attributeName="r" values="160;190;160" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <g opacity="0.16">
+      <path d="M0 84H1200M0 140H1200M0 196H1200M0 252H1200M0 308H1200" stroke="#9AA7B8" stroke-width="1" />
+      <path d="M96 0V420M192 0V420M288 0V420M384 0V420M480 0V420M576 0V420M672 0V420M768 0V420M864 0V420M960 0V420M1056 0V420" stroke="#9AA7B8" stroke-width="1" />
+    </g>
+    <g opacity="0.9">
+      <path d="M145 286C206 232 274 218 345 184C417 149 497 156 572 140C651 123 737 81 833 88C905 93 984 128 1082 104" fill="none" stroke="url(#glow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 10">
+        <animate attributeName="stroke-dashoffset" from="0" to="-160" dur="9s" repeatCount="indefinite" />
+      </path>
+      <path d="M116 316C196 286 262 280 330 252C410 220 491 208 571 192C656 176 741 140 840 146C932 151 1000 182 1104 160" fill="none" stroke="#00E5FF" stroke-opacity="0.28" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+    <g filter="url(#softGlow)">
+      <circle cx="290" cy="202" r="7" fill="#00E5FF"><animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" /></circle>
+      <circle cx="418" cy="170" r="6" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite" /></circle>
+      <circle cx="563" cy="150" r="8" fill="#7C3AED"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.6s" repeatCount="indefinite" /></circle>
+      <circle cx="744" cy="125" r="6" fill="#00E5FF"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite" /></circle>
+      <circle cx="877" cy="108" r="7" fill="#2D7FF9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite" /></circle>
+    </g>
+    <g fill="#EAF1FA" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">
+      <text x="72" y="86" font-size="14" letter-spacing="4" fill="#00E5FF">HIJBULLAH AI LAB</text>
+      <text x="72" y="156" font-size="52" font-weight="700">AI Research Engine</text>
+      <text x="72" y="200" font-size="24" fill="#9AA7B8">Computer Vision · Autonomous Systems · Backend Engineering</text>
+      <text x="72" y="246" font-size="18" fill="#9AA7B8">Research status: active   •   Mode: production   •   Signal: automated</text>
+      <text x="72" y="286" font-size="18" fill="#EAF1FA">Loading repository intelligence...</text>
+      <text x="72" y="318" font-size="18" fill="#00E5FF">git fetch origin main  ✓   classify_repositories.py  ✓   update_readme.py  ✓</text>
+    </g>
+    <rect x="72" y="340" width="360" height="20" rx="10" fill="#0C1628" stroke="#22314A" />
+    <rect x="72" y="340" width="240" height="20" rx="10" fill="url(#glow)">
+      <animate attributeName="width" values="180;300;180" dur="6s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>

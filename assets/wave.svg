@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="waveGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#2D7FF9" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="#07111F" />
+  <path d="M0 60C120 20 240 20 360 60C480 100 600 100 720 60C840 20 960 20 1080 60C1140 80 1200 90 1200 90V120H0Z" fill="url(#waveGradient)">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0 60C120 20 240 20 360 60C480 100 600 100 720 60C840 20 960 20 1080 60C1140 80 1200 90 1200 90V120H0Z;M0 54C120 90 240 90 360 54C480 18 600 18 720 54C840 90 960 90 1080 54C1140 32 1200 24 1200 24V120H0Z;M0 60C120 20 240 20 360 60C480 100 600 100 720 60C840 20 960 20 1080 60C1140 80 1200 90 1200 90V120H0Z" />
+  </path>
+</svg>
