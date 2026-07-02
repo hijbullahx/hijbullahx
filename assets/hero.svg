@@ -67,7 +67,6 @@
       <text x="72" y="200" font-size="24" fill="#9AA7B8">Computer Vision · Autonomous Systems · Backend Engineering</text>
       <text x="72" y="246" font-size="18" fill="#9AA7B8">Research status: active   •   Mode: production   •   Signal: automated</text>
       <text x="72" y="286" font-size="18" fill="#EAF1FA">Loading repository intelligence...</text>
-      <text x="72" y="318" font-size="18" fill="#00E5FF">git fetch origin main  ✓   classify_repositories.py  ✓   update_readme.py  ✓</text>
     </g>
     <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" fill="#F8FAFC">
       <text x="104" y="146" font-size="14" letter-spacing="3" fill="#94A3B8">SYSTEM STATUS</text>
