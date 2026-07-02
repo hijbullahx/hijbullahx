@@ -38,7 +38,7 @@ def build_mission_line() -> str:
 
 def build_current_focus(settings: dict) -> str:
     focus = settings.get("profile", {}).get("vision", [])[:4] or [
-        "Attention-Guided YOLOv11",
+        "Computer Vision",
         "DeepScope Research",
         "Medical AI",
         "Intelligent Transportation",

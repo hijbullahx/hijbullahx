@@ -38,8 +38,8 @@
       <rect x="80" y="124" width="240" height="98" rx="18" fill="url(#glow)" opacity="0.12">
         <animate attributeName="opacity" values="0.06;0.16;0.06" dur="5.6s" repeatCount="indefinite" />
       </rect>
-      <text x="200" y="166" font-size="20" fill="#00F5FF">Attention-Guided</text>
-      <text x="200" y="194" font-size="20">YOLOv11</text>
+      <text x="200" y="166" font-size="20" fill="#00F5FF">Computer</text>
+      <text x="200" y="194" font-size="20">Vision</text>
     </g>
     <g>
       <rect x="350" y="124" width="240" height="98" rx="18" fill="#0B1120" stroke="#1F2937" />
