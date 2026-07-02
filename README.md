@@ -1,5 +1,3 @@
-# HIJBULLAH AI LAB
-
 <div align="center">
 
 <img src="assets/hero-signature.svg" width="100%" alt="Animated profile signature" />
