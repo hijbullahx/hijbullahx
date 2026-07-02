@@ -16,7 +16,12 @@ def build_statistics(payload: dict, settings: dict) -> dict:
     repositories = payload.get("repositories", []) if isinstance(payload, dict) else []
     categories = payload.get("categories", {}) if isinstance(payload, dict) else {}
 
-    language_counts = Counter(repo.get("language") or "Unknown" for repo in repositories)
+    language_counts = Counter(
+        language
+        for repo in repositories
+        for language in [repo.get("language")]
+        if language and language != "Unknown"
+    )
     topic_counts = Counter(topic.lower() for repo in repositories for topic in repo.get("topics", []) or [])
     category_counts = Counter(category for category, values in categories.items() for _ in values)
     starred = sorted(repositories, key=lambda item: (-item.get("stars", 0), -item.get("forks", 0), item.get("name", "").lower()))
@@ -35,7 +40,7 @@ def build_statistics(payload: dict, settings: dict) -> dict:
         ["Public repositories", str(len(repositories)), "Live GitHub portfolio surface"],
         ["Research repositories", str(len(research_repositories)), "Vision, medical AI, and research tooling"],
         ["Production repositories", str(len(production_repositories)), "Backend, automation, and deployable systems"],
-        ["Top language", top_languages[0] if top_languages else "Unknown", "Primary implementation stack"],
+        ["Top language", top_languages[0] if top_languages else "Mixed", "Primary implementation stack"],
         ["Most recent update", relative_age(recent[0].get("updated_at")) if recent else "Unknown", "Maintenance signal"],
     ]
 
