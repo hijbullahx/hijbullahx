@@ -103,15 +103,6 @@ def build_lets_build_together(settings: dict) -> str:
     )
 
 
-def build_footer() -> str:
-    return (
-        "## Animated Footer\n\n"
-        "<div align=\"center\">\n"
-        "<img src=\"assets/footer.svg\" width=\"100%\" alt=\"Animated footer\" />\n"
-        "</div>"
-    )
-
-
 def build_live_widgets(settings: dict) -> str:
     widget_order = ["graph", "snake", "trophy", "waka", "spotify", "leetcode"]
     images = [build_widget_url(name, settings) for name in widget_order]
@@ -141,7 +132,6 @@ def build_readme() -> str:
         build_github_analytics(settings),
         build_research_journey(),
         build_lets_build_together(settings),
-        build_footer(),
     ]
     body = "\n\n".join(section for section in sections if section)
 

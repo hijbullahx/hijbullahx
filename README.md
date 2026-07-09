@@ -50,9 +50,3 @@
 <a href="https://www.hijbullah.me"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=00F5FF" alt="Portfolio" /></a>
 <a href="https://github.com/hijbullahx"><img src="https://img.shields.io/badge/GitHub-050816?style=for-the-badge&logo=github&logoColor=00F5FF" alt="GitHub" /></a>
 </div>
-
-## Animated Footer
-
-<div align="center">
-<img src="assets/footer.svg" width="100%" alt="Animated footer" />
-</div>
