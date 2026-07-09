@@ -61,13 +61,20 @@ def build_technology_stack(settings: dict, statistics: dict) -> str:
     )
 
 
+def build_contribution_graph(settings: dict) -> str:
+    graph = build_widget_url("graph", settings)
+    return (
+        "## Contribution Graph\n\n"
+        f"<div align=\"center\">\n  <img src=\"{graph}\" alt=\"Contribution graph\" />\n</div>"
+    )
+
+
 def build_github_analytics(settings: dict) -> str:
     owner = settings.get("profile", {}).get("owner", "hijbullahx")
     streak = f"https://streak-stats.demolab.com?user={owner}&theme=transparent&border_radius=12&date_format=M%20j%5B%2C%20Y%5D"
     return (
         "## GitHub Analytics\n\n"
         f"<div align=\"center\">\n  <img src=\"{streak}\" height=\"170\" alt=\"GitHub streak\" />\n</div>\n\n"
-        f"<div align=\"center\">\n  <img src=\"https://github-readme-activity-graph.vercel.app/graph?username={owner}&theme=github-compact&hide_border=true&bg_color=050816&color=F8FAFC&line=00F5FF&point=8B5CF6\" alt=\"Contribution graph\" />\n</div>\n\n"
         ""
     )
 
@@ -126,6 +133,7 @@ def build_readme() -> str:
 
     sections = [
         build_hero(settings),
+        build_contribution_graph(settings),
         build_mission_line(),
         build_current_focus(settings),
         build_technology_stack(settings, statistics),

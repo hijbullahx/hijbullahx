@@ -8,6 +8,12 @@
 
 </div>
 
+## Contribution Graph
+
+<div align="center">
+  <img src="assets/contribution-graph.svg" alt="Contribution graph" />
+</div>
+
 ## Mission
 
 <div align="center">
@@ -30,10 +36,6 @@
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=hijbullahx&theme=transparent&border_radius=12&date_format=M%20j%5B%2C%20Y%5D" height="170" alt="GitHub streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hijbullahx&theme=github-compact&hide_border=true&bg_color=050816&color=F8FAFC&line=00F5FF&point=8B5CF6" alt="Contribution graph" />
 </div>
 
 

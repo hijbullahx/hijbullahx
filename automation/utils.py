@@ -279,7 +279,7 @@ def build_widget_url(name: str, settings: Mapping[str, Any]) -> str:
     widgets = settings.get("widgets", {})
     owner = profile.get("owner", "hijbullahx")
     if name == "graph":
-        return f"https://github-readme-activity-graph.vercel.app/graph?username={owner}&theme=github-compact"
+        return "assets/contribution-graph.svg"
     if name == "snake":
         return f"https://raw.githubusercontent.com/{owner}/{owner}/output/github-contribution-grid-snake.svg"
     if name == "trophy":
